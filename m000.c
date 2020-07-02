@@ -47,7 +47,7 @@ int pitagorean (char *s)
         pit=pit+sum%10;
         sum=sum/10;
         }
-    if (pit==1)
+   /* if (pit==1)
     rom='I';
     if (pit==2)
     rom='II';
@@ -69,6 +69,8 @@ return rom;
 }
 
 /* Do not edit function main. */
+return pit;
+}
 
 int main (int argc, char **argv)
 {
