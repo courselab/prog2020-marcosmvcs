@@ -25,9 +25,6 @@
 int greatest (int a, int b, int c)
 {
     int m, sub1, sub2, sub3;
-    a=3;
-     b=2 ;
-    c=2;
     sub1= a-b;
     sub2= a-c;
     sub3= b-c;
