@@ -48,23 +48,23 @@ int pitagorean (char *s)
         sum=sum/10;
         }
     if (pit==1)
-        rom='I';
-            else if (pit==2)
-                rom='II';
-                    else if (pit==3)
-                        rom='III';
-                            else if (pit==4)
-                                rom='IV';
-                                    else if (pit==5)
-                                        rom='V';
-                                            else if (pit==6)
-                                                rom='V1';
-                                                    else if (pit==7)
-                                                        rom='VII';
-                                                            else if (pit==8)
-                                                                rom='VIII';
-                                                                    else if (pit==9)
-                                                                        rom='IX';
+    rom='I';
+    if (pit==2)
+    rom='II';
+    if (pit==3)
+    rom='III';
+    if (pit==4)
+    rom='IV';
+    if (pit==5)
+    rom='V';
+    if (pit==6)
+    rom='V1';
+    if (pit==7)
+    rom='VII';
+    if (pit==8)
+    rom='VIII';
+    if (pit==9)
+    rom='IX';
 return rom;
 }
 
