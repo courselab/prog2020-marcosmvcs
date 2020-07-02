@@ -49,22 +49,22 @@ int pitagorean (char *s)
         }
     if (pit==1)
         rom='I';
-        else if (pit==2)
-            rom='II';
-                else if (pit==3)
-                    rom='III';
-                        else if (pit==4)
-                            rom='IV';
-                                else if (pit==5)
-                                    rom='V';
-                                        else if (pit==6)
-                                            rom='V1';
-                                                else if (pit==7)
-                                                    rom='VII';
-                                                        else if (pit==8)
-                                                            rom='VIII';
-                                                                else if (pit==9)
-                                                                    rom='IX';
+            else if (pit==2)
+                rom='II';
+                    else if (pit==3)
+                        rom='III';
+                            else if (pit==4)
+                                rom='IV';
+                                    else if (pit==5)
+                                        rom='V';
+                                            else if (pit==6)
+                                                rom='V1';
+                                                    else if (pit==7)
+                                                        rom='VII';
+                                                            else if (pit==8)
+                                                                rom='VIII';
+                                                                    else if (pit==9)
+                                                                        rom='IX';
 return rom;
 }
 
