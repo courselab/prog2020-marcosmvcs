@@ -37,7 +37,6 @@ int greatest (int a, int b, int c)
         m=b;
     if (sub2<=0 && sub3<=0)
         m=c;
-    printf("o valor de m é: %d",m);
   return m;
 }
 
