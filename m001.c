@@ -25,21 +25,19 @@
 int greatest (int a, int b, int c)
 {
     int m, sub1, sub2, sub3;
+    a=3;
+     b=2 ;
+    c=2;
     sub1= a-b;
     sub2= a-c;
     sub3= b-c;
     if (sub1>=0 && sub2>=0)
-    {
         m=a;
-    }
-    else if (sub1<=0 && sub3>=0)
-    {
+    if (sub1<=0 && sub3>=0)
         m=b;
-    }
-    else
-    {
+    if (sub2<=0 && sub3<=0)
         m=c;
-    }
+    printf("o valor de m é: %d",m);
   return m;
 }
 
