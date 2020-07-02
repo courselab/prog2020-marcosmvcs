@@ -70,7 +70,7 @@ int pitagorean (char *s)
 return rom;
 }
 
-/* Do not edit function main. */
+Do not edit function main. */
 
 
 int main (int argc, char **argv)
