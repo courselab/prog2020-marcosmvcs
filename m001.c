@@ -29,11 +29,11 @@ int greatest (int a, int b, int c)
     sub2= a-c;
     sub3= b-c;
     if (sub1>=0 && sub2>=0)
-        m=a;
-        else if (sub1<=0 && sub3>=0)
-            m=b;
-            else
-            m=c;
+    m=a;
+    else if (sub1<=0 && sub3>=0)
+    m=b;
+    else
+    m=c;
   return m;
 }
 
