@@ -28,10 +28,18 @@
 
 int lettercount (char *s)
 {
-  return 0;
+  int count=0,i=0;
+  while (s[i]!=0)
+  {
+    if((s[i]>='a'&& s[i]<='z')||(s[i]>='A'&& s[i]<='Z'))
+    {
+      count++;
+    }
+    i++;
+
+  }
+  return count;
 }
-
-
 
 /* Do not edit this function. */
 
@@ -41,10 +49,10 @@ int main (int argc, char **argv)
   char name[MAX];
 
   fgets (name, MAX-1, stdin);
-  
+
   n = lettercount (name);
 
   printf ("%d\n", n);
-  
+
   return 0;
 }
