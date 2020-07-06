@@ -33,11 +33,11 @@ void sort (int *a, int *b, int *c)
 
   }
   if((*a<=*c) && (*c<=*b))
-{
+   {
   t=*b;
   *b=*c;
   *c=t;
-}
+   }
   if ((*b<=*a) && (*a<=*c))
   {
     t=*a;
