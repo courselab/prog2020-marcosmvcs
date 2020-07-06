@@ -29,22 +29,19 @@
 
 int decimal (char *b)
 {
-  int sum=0,i=0,n,t,v=1,a;
+  int sum=0,i=0,n,v=1,a;
   while (b[i]!=0)
   {
     i++;
   }
-  n=i;
-  for(i;i>0;i--)
+  n=i-1;
+  for (n;n>=0;n--)
   {
-    t=n-i;
-    for(t;t>0;t--)
-    {
-      v=2*v;
-    }
-    a=b[i-1]-48;
-    sum= sum + v*a;
+  a=b[n]-48;
+  sum=sum+v*a;
+  v=2*v;
   }
+
   return sum;
 }
 
