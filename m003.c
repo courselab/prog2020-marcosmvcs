@@ -27,12 +27,14 @@ int aux,r,p=1;
 if (a==1)
 p=0;
 else
-for (aux=2;aux<a;aux++)
-{
-  r=a%aux;
-  if (r==0)
-  p=0;
-}
+    for (aux=2;aux<a;aux++)
+    {
+      r=a%aux;
+          if (r==0)
+          {
+           p=0;
+          }
+    }
 return p;
 }
 
