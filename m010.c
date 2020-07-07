@@ -30,8 +30,41 @@ enum {sun, mon, tue, wed, thu, fri, sat};
 
 int day_of_week (int day, int month)
 {
-  return sun;
+  int sum=0, aux=1,r;
+  if (month==1)
+  sum=0;
+  if (month==2)
+  sum=31;
+  if (month==3)
+  sum=60;
+  if (month==4)
+  sum=91;
+  if (month==5)
+  sum=121;
+  if (month==6)
+  sum=152;
+  if (month==7)
+  sum=182;
+  if (month==8)
+  sum=213;
+  if (month==9)
+  sum=244;
+  if (month==10)
+  sum=274;
+  if (month==11)
+  sum=305;
+  if (month==12)
+  sum=335;
+
+  sum= sum + day + 2;
+
+  printf("%d\n",sum);
+
+  r= sum%7;
+
+  return r;
 }
+
 
 /* Do not edit function main. */
 
@@ -45,12 +78,12 @@ int main (int argc, char **argv)
       printf (USAGE);
       exit(1);
     }
-  
+
   day = atoi(argv[1]);
   month = atoi(argv[2]);
 
   dweek = day_of_week (day, month);
-  
+
   switch (dweek)
     {
     case sun:
@@ -78,6 +111,6 @@ int main (int argc, char **argv)
       printf ("Something wrong\n");
       break;
     }
-  
+
   return 0;
 }
