@@ -30,7 +30,7 @@
 
 void lastname (char *s)
 {
-  int n=0,count=0,aux,i=0,sub,m,N=0,a;
+  int n=0,count=0,aux,i=0,sub,m,N=0,a,b;
   char prov[MAX];
   while (s[n]!=0)
   {
@@ -56,10 +56,11 @@ void lastname (char *s)
     prov[i]=s[i];
     }
     else
-    prov[i]=' ';
+    prov[i]=',';
     i++;
   }
-
+  b=sub+1;
+  s[b]=' ';
   while (N!=n)
   {
   if (N<=sub)
@@ -70,7 +71,8 @@ void lastname (char *s)
   else
   {
     a=N-sub-1;
-    s[N]=prov[a];
+    b=N+1;
+    s[b]=prov[a];
   }
   N++;
   }
