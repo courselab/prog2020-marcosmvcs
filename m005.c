@@ -27,7 +27,14 @@
 
 int determinant (int m[3][3])
 {
-  return 0;
+  int d;
+  d= (m[0][0])*(m[1][1])*(m[2][2]);
+  d= d +(m[0][1])*(m[1][2])*(m[2][0]);
+  d= d + (m[0][2])*(m[1][0])*(m[2][1]);
+  d= d -(m[0][2])*(m[1][1])*(m[2][0]);
+  d= d -(m[0][0])*(m[1][2])*(m[2][1]);
+  d= d-(m[0][1])*(m[1][0])*(m[2][2]);
+  return d;
 }
 
 
@@ -38,16 +45,16 @@ int main (int argc, char **argv)
 {
   int a[3][3];
   int det;
-  
+
   /* Read matrix lines. */
-  
+
   scanf ("%d %d %d", &a[0][0], &a[0][1], &a[0][2]);
   scanf ("%d %d %d", &a[1][0], &a[1][1], &a[1][2]);
   scanf ("%d %d %d", &a[2][0], &a[2][1], &a[2][2]);
 
   det = determinant (a);
-  
+
   printf ("%d\n", det);
-  
+
   return 0;
 }
